@@ -1,3 +1,5 @@
+[쿠버네티스 샘플](https://www.callicoder.com/deploy-spring-mysql-react-nginx-kubernetes-persistent-volume-secret/)
+
 ## Building a Full Stack Polls app similar to twitter polls with Spring Boot, Spring Security, JWT, React and Ant Design
 
 ![App Screenshot](screenshot.png)
