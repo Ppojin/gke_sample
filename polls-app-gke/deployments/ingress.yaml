@@ -1,20 +1,20 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: fanout-ingress
+    name: fanout-ingress
 spec:
     # backend:
     #     serviceName: polling-app-server
     #     servicePort: 8080
-  rules:
-  - http:
-      paths:
-      - path: /*
-        frontend:
-          serviceName: polling-app-client
-          servicePort: 80
-      - path: /api/*
-        backend:
-          serviceName: polling-app-server
-          servicePort: 8080
+    rules:
+    - http:
+        paths:
+        - path: /*
+            backend:
+                serviceName: polling-app-client
+                servicePort: 80
+        - path: /api/*
+            backend:
+                serviceName: polling-app-server
+                servicePort: 8080
 ---
