@@ -13,3 +13,6 @@ kubectl apply -f deployments/polling-app-server.yaml
 
 echo "\n========== Deploying the React app on Kubernetes ==========\n"
 kubectl apply -f deployments/polling-app-client.yaml
+
+echo "\n========== ingress ==========\n"
+kubectl apply -f deployments/ingress.yaml
