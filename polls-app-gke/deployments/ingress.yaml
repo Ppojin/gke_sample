@@ -4,6 +4,12 @@ metadata:
   name: basic-ingress
 spec:
   backend:
-    serviceName: polling-app-client
-    servicePort: 80
+    - path: /*
+      backend:
+        serviceName: polling-app-client
+        servicePort: 80
+    - path: /api/*
+        backend:
+        serviceName: polling-app-server
+        servicePort: 8080
 ---
