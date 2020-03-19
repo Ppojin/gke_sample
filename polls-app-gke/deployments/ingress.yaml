@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1beta2
 kind: Ingress
 metadata:
   name: my-ingress
@@ -13,5 +13,5 @@ spec:
       - path: /api/*
         backend:
           serviceName: polling-app-server
-          servicePort: 8080
+          servicePort: 30610
 ---
