@@ -5,5 +5,5 @@ metadata:
 spec:
   backend:
     serviceName: polling-app-client
-    servicePort: 8080
+    servicePort: 80
 ---
