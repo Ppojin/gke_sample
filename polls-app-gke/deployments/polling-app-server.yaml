@@ -56,7 +56,6 @@ spec:
   - name: http
     port: 8080
     targetPort: 8080
-    apiVersion: extensions/v1beta1
 ---
 apiVersion: extensions/v1beta1
 kind: Ingress
