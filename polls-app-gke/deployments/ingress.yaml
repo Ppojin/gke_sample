@@ -10,7 +10,7 @@ spec:
   - http:
       paths:
       - path: /*
-        backend:
+        frontend:
           serviceName: polling-app-client
           servicePort: 80
       - path: /api/*
