@@ -4,6 +4,6 @@ metadata:
   name: test-ingress
 spec:
   backend:
-    serviceName: testsvc
+    serviceName: polling-app-client
     servicePort: 80
 ---
