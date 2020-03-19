@@ -5,13 +5,13 @@ metadata:
 spec:
   rules:
   - http:
-    paths:
-    - path: /*
-      backend:
-        serviceName: polling-app-client
-        servicePort: 80
-    - path: /api/*
-      backend:
-        serviceName: polling-app-server
-        servicePort: 8080
+      paths:
+      - path: /*
+        backend:
+          serviceName: polling-app-client
+          servicePort: 80
+      - path: /api/*
+        backend:
+          serviceName: polling-app-server
+          servicePort: 8080
 ---
