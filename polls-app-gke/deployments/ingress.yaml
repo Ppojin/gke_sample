@@ -3,15 +3,18 @@ kind: Ingress
 metadata:
   name: fanout-ingress
 spec:
-  rules:
-  - http:
-      paths:
-      - path: /*
-        backend:
-          serviceName: polling-app-client
-          servicePort: 80
-      - path: /api/*
-        backend:
-          serviceName: polling-app-server
-          servicePort: 8080
+    backend:
+        serviceName: polling-app-server
+        servicePort: 8080
+#   rules:
+#   - http:
+#       paths:
+#       - path: /*
+#         backend:
+#           serviceName: polling-app-client
+#           servicePort: 80
+#       - path: /api/*
+#         backend:
+#           serviceName: polling-app-server
+#           servicePort: 8080
 ---
