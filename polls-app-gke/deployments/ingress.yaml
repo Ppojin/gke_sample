@@ -6,10 +6,10 @@ spec:
   rules:
   - http:
       paths:
-      # - path: /frontend/*
-      #   backend:
-      #     serviceName: polling-app-client
-      #     servicePort: 80
+      - path: /frontend/*
+        backend:
+          serviceName: polling-app-client
+          servicePort: 80
       - path: /api/*
         backend:
           serviceName: polling-app-server
