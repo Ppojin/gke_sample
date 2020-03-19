@@ -36,3 +36,12 @@ spec:
   - name: http
     port: 80
     targetPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-for-client
+spec:
+  backend:
+    serviceName: polling-app-client
+    servicePort: 80
