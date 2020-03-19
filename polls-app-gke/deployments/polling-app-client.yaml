@@ -34,5 +34,5 @@ spec:
     app: polling-app-client     # Any Pod matching the label `app=polling-app-client` will be picked up by this service
   ports:                        # Forward incoming connections on port 80 to the target port 80 in the Pod
   - name: http
-    port: 80
+    port: 443
     targetPort: 80
