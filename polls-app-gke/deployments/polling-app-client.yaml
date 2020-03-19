@@ -35,4 +35,4 @@ spec:
   ports:                        # Forward incoming connections on port 80 to the target port 80 in the Pod
   - name: http
     port: 80
-    targetPort: 81
+    targetPort: 80
